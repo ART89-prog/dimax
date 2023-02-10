@@ -13,8 +13,38 @@ $(() => {
 
 
 
+  $('.licenses_slider').slick({
+    centerMode: true,
+    variableWidth: true,
+    arrows: true,
+    centerPadding: '360px',
+    slidesToShow: 3,
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
-  $('.events-slider').slick({
+
+  $('.gallery-slider').slick({
     arrows: false,
     dots: true,
     infinite: true,
