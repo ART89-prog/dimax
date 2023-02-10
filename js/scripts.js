@@ -3,34 +3,12 @@ $(() => {
   // Основной слайдер на главной
   $('.main_slider .slider').slick({
     infinite: true,
-    dots: true,
+    dots: false,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // responsive: [
-    //   {
-    //     breakpoint: 1023,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 767,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 479,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // ]
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>'
   });
 
 
