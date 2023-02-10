@@ -34,6 +34,22 @@ $(() => {
   });
 
 
+
+
+  $('.events-slider').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 6000, 
+    touchThreshold: 100,
+    draggable: true
+}); 
+
+
+
   // Моб. меню
   $('header .mob_menu_btn').click((e) => {
     e.preventDefault()

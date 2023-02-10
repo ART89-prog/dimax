@@ -6,7 +6,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
     .supports_error {
         display: flex !important;
     }
@@ -108,7 +109,8 @@ input[type=number] {
     --font_size: 18px;
     --font_size_title: 33px;
     --font_family: 'Rubik', sans-serif;
-    --font_family2: 'Montserrat', sans-serif;;
+    --font_family2: 'Montserrat', sans-serif;
+    ;
 }
 
 ::selection {
@@ -289,13 +291,15 @@ header .mob_menu_btn {
     flex-wrap: wrap;
     z-index: 8;
 }
+
 header .mob_menu_btn .icon {
     display: block;
     width: 20px;
     height: 18px;
 }
+
 header .close_btn {
-    color: #000;   
+    color: #000;
     order: 1;
     display: none;
     justify-content: center;
@@ -307,17 +311,20 @@ header .close_btn {
     width: 47px;
     height: 26px;
 }
+
 .header_bottom .cont {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
+
 header .menu {
     display: flex;
     align-items: center;
     margin-right: auto;
 }
-header .menu .item > a {
+
+header .menu .item>a {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -340,15 +347,19 @@ header .menu .item > a {
     text-decoration: none;
     cursor: pointer;
 }
-header .menu .item:last-child > a {
+
+header .menu .item:last-child>a {
     margin-right: 0;
 }
-header .menu .item:hover > a {
+
+header .menu .item:hover>a {
     color: #FA9632;
 }
+
 .header_top {
     background: #F5F9FB;
 }
+
 .header_top .cont {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -356,14 +367,17 @@ header .menu .item:hover > a {
     align-items: center;
     justify-content: space-between;
 }
+
 .header_top-left {
     display: flex;
     align-items: center;
 }
+
 .header_top-right {
     display: flex;
     align-items: center;
 }
+
 .header_top-email {
     text-decoration: none;
     border-bottom: 1px solid #FA9632;
@@ -375,12 +389,14 @@ header .menu .item:hover > a {
     display: block;
     margin-right: 43px;
 }
+
 .header_top-adress {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #2E2E2E;
 }
+
 .header_top-time {
     font-weight: 400;
     font-size: 12px;
@@ -388,6 +404,7 @@ header .menu .item:hover > a {
     text-align: right;
     color: #2E2E2E;
 }
+
 .header_top-phone {
     text-decoration: none;
     font-weight: 400;
@@ -398,16 +415,19 @@ header .menu .item:hover > a {
     display: block;
     margin-left: 24px;
 }
+
 .header_bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;  
-    position: relative;  
+    justify-content: space-between;
+    position: relative;
 }
+
 .header_bottom .cont {
     padding-top: 15px;
     padding-bottom: 14px;
 }
+
 .header_logo {
     margin-right: 64px;
 }
@@ -424,10 +444,12 @@ header .menu .item:hover > a {
     display: flex;
     align-items: center;
 }
+
 header .btn img {
     display: block;
     margin-right: 11px;
 }
+
 .header_bottom .btn {
     position: absolute;
     right: -100px;
@@ -445,6 +467,7 @@ header .btn img {
     position: relative;
     overflow: hidden;
 }
+
 .main_slider .slide .cont {
     position: relative;
     z-index: 3;
@@ -457,6 +480,7 @@ header .btn img {
     align-content: center;
     flex-wrap: wrap;
 }
+
 .main_slider .slide .bg {
     position: absolute;
     z-index: 1;
@@ -476,6 +500,7 @@ header .btn img {
     flex-direction: column;
     justify-content: center;
 }
+
 .main_slider-title {
     margin-bottom: 113px;
     font-family: 'Montserrat';
@@ -487,6 +512,7 @@ header .btn img {
     color: #FFFFFF;
     text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
 }
+
 .main_slider-btn {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -505,6 +531,7 @@ header .btn img {
     text-align: left;
     margin: 0 auto;
 }
+
 .main_slider-btn:after {
     position: absolute;
     width: 72px;
@@ -515,6 +542,7 @@ header .btn img {
     transform: translateX(-50%);
     content: "";
 }
+
 .main_slider-btn:before {
     position: absolute;
     width: 55px;
@@ -524,6 +552,7 @@ header .btn img {
     right: 15px;
     content: "";
 }
+
 .main_slider .bg::after {
     position: absolute;
     top: 0;
@@ -532,4 +561,112 @@ header .btn img {
     width: 100%;
     height: 100%;
     background: linear-gradient(187.63deg, rgba(250, 150, 50, 0.7) 6.02%, rgba(6, 96, 154, 0.7) 94.2%);
+}
+
+
+
+
+
+.tab_content {
+    display: none;
+}
+
+.tab_content.active {
+    display: block;
+}
+
+
+
+
+.events-grid-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.events-grid-desc img {
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.events-grid-desc a:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.events-grid-desc .events-grid-first-col {
+    margin-right: 16px;
+}
+
+.events-grid-desc .item-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 261px;
+    height: 540px;
+}
+
+.events-grid-desc .events-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 863px;
+    margin-bottom: 16px;
+}
+
+.events-grid-desc .events-row:last-child {
+    margin-bottom: 0;
+}
+
+.events-grid-desc .item-2,
+.events-grid-desc .item-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 277px;
+    height: 262px;
+}
+
+.events-grid-desc .item-3,
+.events-grid-desc .item-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 569px;
+    height: 262px;
+}
+
+.events-grid-desc .item-3 img,
+.events-grid-desc .item-4 img {
+    width: 100%;
+    height: auto;
 }
