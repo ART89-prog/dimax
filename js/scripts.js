@@ -45,14 +45,16 @@ $(() => {
 
 
   $('.gallery-slider').slick({
-    arrows: false,
-    dots: true,
+    arrows: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000, 
     touchThreshold: 100,
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
     draggable: true
 }); 
 
