@@ -735,6 +735,9 @@ header .btn img {
     border-radius: 2px;
     object-fit: cover;
 }
+.about_img-mob {
+    display: none;
+}
 
 
 .tab_content {

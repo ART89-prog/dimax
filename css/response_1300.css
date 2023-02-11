@@ -7,10 +7,16 @@
         margin-right: 25px;
     }
     .slider .slick-arrow.prev {
-        left: calc(50% - 550px);
+        left: 40px;
     }
     .slider .slick-arrow.next {
-        right: calc(50% - 550px);
+        right: 40px;
+    }
+    .gallery-slider .slick-arrow.prev {
+        left: 40px;
+    }
+    .gallery-slider .slick-arrow.next {
+        right: 40px;
     }
     .header_top .cont {
         flex-direction: column;
