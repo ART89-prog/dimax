@@ -106,6 +106,8 @@ input[type=number] {
 -------------------*/
 :root {
     --text_color: #2E2E2E;
+    --text_color2: #FA9632;
+    --text_color3: #0A7391;
     --font_size: 18px;
     --font_size_title: 33px;
     --font_family: 'Rubik', sans-serif;
@@ -281,35 +283,43 @@ button {
 
 header .mob_menu_btn {
     display: none;
-    width: 47px;
-    height: 26px;
-    margin-right: 0px;
-    margin-left: 30px;
+    margin-right: 19px;
+    width: 162px;
+    height: 78px;
+    padding: 0 33px;
+    background: #0A7391;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
     z-index: 8;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
 }
 
-header .mob_menu_btn .icon {
+header .mob_menu_btn img {
     display: block;
-    width: 20px;
+    width: 27px;
     height: 18px;
+    margin-right: 10px;
 }
 
 header .close_btn {
-    color: #000;
     order: 1;
     display: none;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    margin-right: 0px;
-    margin-left: 30px;
-    width: 47px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
+    z-index: 120;
+
 }
 
 .header_bottom .cont {
@@ -329,7 +339,7 @@ header .menu .item>a {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #2E2E2E;
+    color: var(--text_color);
     margin-right: 31px;
     position: relative;
     display: flex;
@@ -353,7 +363,7 @@ header .menu .item:last-child>a {
 }
 
 header .menu .item:hover>a {
-    color: #FA9632;
+    color: var(--text_color2);
 }
 
 .header_top {
@@ -380,11 +390,11 @@ header .menu .item:hover>a {
 
 .header_top-email {
     text-decoration: none;
-    border-bottom: 1px solid #FA9632;
+    border-bottom: 1px solid var(--text_color2);
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FA9632;
+    color: var(--text_color2);
     white-space: nowrap;
     display: block;
     margin-right: 43px;
@@ -394,7 +404,7 @@ header .menu .item:hover>a {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #2E2E2E;
+    color:  var(--text_color);
 }
 
 .header_top-time {
@@ -402,13 +412,13 @@ header .menu .item:hover>a {
     font-size: 12px;
     line-height: 14px;
     text-align: right;
-    color: #2E2E2E;
+    color: var(--text_color);
 }
 
 .header_top-phone {
     text-decoration: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 21px;
     text-align: right;
     color: #4C4C4C;
@@ -506,7 +516,7 @@ header .btn img {
 
 .main_slider-title {
     margin-bottom: 113px;
-    font-family: 'Montserrat';
+    font-family: var(--font_family2);
     font-weight: 900;
     font-size: 88px;
     line-height: 100%;
@@ -517,7 +527,7 @@ header .btn img {
 }
 
 .main_slider-btn {
-    font-family: 'Montserrat';
+    font-family: var(--font_family2);
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -590,13 +600,13 @@ header .btn img {
 
 
 .title {
-    font-family: 'Montserrat';
+    font-family: var(--font_family2);
     font-weight: 900;
-    font-size: 33px;
+    font-size: var(--font_size_title);
     line-height: 40px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #2E2E2E; 
+    color: var(--text_color);
     text-align: center; 
     position: relative;
     margin-bottom: 40px;
@@ -661,20 +671,20 @@ header .btn img {
 .about_info-text {
     margin-bottom: 40px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 160%;
-    color: #2E2E2E;
+    color: var(--text_color);
 }
 .about_info-text b {
     font-weight: 600;
 }
 .about_info-subtitle {
-    font-family: 'Montserrat';
+    font-family: var(--font_family2);
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
     letter-spacing: 0.02em;
-    color: #2E2E2E;
+    color: var(--text_color);
     margin-bottom: 30px;
 }
 .about_items {
@@ -702,7 +712,7 @@ header .btn img {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #0A7391;
+    color: var(--text_color3);
     opacity: 0.4;   
     margin-left: 24px;
     display: block; 
@@ -712,7 +722,7 @@ header .btn img {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #2E2E2E;
+    color: var(--text_color);
 }
 .about_img {
     width: 490px;
@@ -752,14 +762,14 @@ header .btn img {
     margin-right: 0;    
 }
 .tabs button.active {
-    color: #FA9632;
+    color: var(--text_color2);
     border-bottom: 2px dotted transparent;
 }
 .tabs button:hover {
-    border-bottom: 2px dotted #FA9632;
+    border-bottom: 2px dotted var(--text_color2);
 }
 .service {
-    background: #2E2E2E;
+    background: var(--text_color);
     padding-bottom: 65px;
 }
 .service_title {
@@ -768,7 +778,7 @@ header .btn img {
 }
 .service_desc {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 21px;
     text-align: center;
     color: #FFFFFF; 
@@ -788,7 +798,7 @@ header .btn img {
     margin-left: 20px;
     margin-bottom: 20px;
     padding: 39px 20px 16px;
-    border: 1px solid #FA9632;
+    border: 1px solid var(--text_color2);
     border-radius: 2px;
     cursor: pointer;
     min-height: 135px;
@@ -799,9 +809,9 @@ header .btn img {
     position: absolute;
     top: 13px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 21px;
-    color: #FA9632;
+    color: var(--text_color2);
 }
 .service_item-title {
     font-weight: 400;
@@ -818,7 +828,7 @@ header .btn img {
     color: #000;
 }
 .service_item:hover .service_item-title {
-    color: #FA9632;
+    color: var(--text_color2);
 }
 .service_item-logo:before {
     display: none;
@@ -845,7 +855,7 @@ header .btn img {
 }
 .licenses .slick-center {
     transform: scale(1.5);
-    border: 8px solid #0A7391;
+    border: 8px solid var(--text_color3);
     margin: 0 164px;
     width: 249px;
     height: auto;
@@ -860,9 +870,7 @@ header .btn img {
     font-weight: 300;
     font-size: 22px;
     line-height: 26px;
-    color: #2E2E2E;
-    display: flex;
-    align-items: center;
+    color: var(--text_color);
 }
 .licenses_desc a {
     text-decoration: none;
@@ -871,16 +879,16 @@ header .btn img {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.06);
     border-radius: 2px;
     padding: 4px 8px;
-    display: block;
     font-weight: 500;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 21px;    
     color: #06609A;
+    white-space: nowrap;
 }
 
 .licenses_slider .slick-slide.slick-center.slick-active.slick-current {
     opacity: 1;
-    background: #0A7391;
+    background: var(--text_color3);
     box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.09);
 }
 .licenses_slider .slick-arrow {
@@ -910,7 +918,7 @@ header .btn img {
 
 
 .gallery {
-    background: #2E2E2E;
+    background: var(--text_color);
 }
 .gallery .cont {
     max-width: 1388px;
@@ -1086,14 +1094,14 @@ header .btn img {
     font-weight: 300;
     font-size: 22px;
     line-height: 26px;
-    color: #2E2E2E;
+    color:  var(--text_color);
     margin-bottom: 12px;
 }
 .contacts_email {
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: #FA9632;
+    color: var(--text_color2);
     margin-bottom: 25px;  
     display: block;
 }
@@ -1145,20 +1153,22 @@ header .btn img {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #0A7391;
+    color: var(--text_color3);
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 .contacts_item-phone img {
     display: block;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 .socials {
     margin-top: 74px;
 }
 .socials_text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 21px;
     color: #1B1B1B;
     margin-bottom: 28px;
@@ -1172,7 +1182,7 @@ header .btn img {
     width: 152px;
     height: 41px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 21px;
     color: #FFFFFF;
     display: flex;
@@ -1221,17 +1231,12 @@ header .btn img {
 .geography_title {
     margin-bottom: 60px;
 }
-.geography_img {
+
+.geography_img img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-.geography_bg {
-    background: url(../images/geography.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 776px;
 }
 
 
@@ -1273,15 +1278,14 @@ footer .menu .item:last-child > a {
     margin-right: 0px;
 }
 footer .menu .item:hover > a {
-    color: #FA9632;
+    color: var(--text_color2);
 }
 .footer_politic {
-    border-bottom: 1px solid rgba(250, 150, 50, 0.2);
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: right;
-    color: #FA9632;
+    color: var(--text_color2);
 }
 
 
@@ -1295,6 +1299,7 @@ footer .menu .item:hover > a {
     right: 30px;
 }
 .modal {
+    display: none;
     max-width: 480px;
     width: 100%;
     background: #FFFFFF;
@@ -1302,13 +1307,13 @@ footer .menu .item:hover > a {
     padding: 142px 60px;
 }
 .modal_title {
-    font-family: 'Montserrat';
+    font-family: var(--font_family2);
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
     line-height: 49px;
     text-align: center;
-    color: #2E2E2E;
+    color:  var(--text_color);
     margin-bottom: 36px;
 }
 .modal form .line {
@@ -1324,18 +1329,32 @@ footer .menu .item:hover > a {
     background: #F5F5F5;
     border: 1px solid #E0E0E0;
     border-radius: 2px;
-    font-family: 'Rubik';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 49px;
     color: #949494;
+}
+.modal form .line .field textarea {
+    width: 100%;
+    height: 89px;
+    padding: 15px 18px;
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #949494;
+    resize: none;
 }
 .form_text {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #2E2E2E;
+    color: var(--text_color);
     margin-top: 36px;
     margin-bottom: 12px;
 }
@@ -1357,13 +1376,13 @@ footer .menu .item:hover > a {
     margin: 0 auto 38px;
 }
 .modal_thanks-title {
-    font-family: 'Montserrat';
+    font-family: var(--font_family2);
     font-weight: 900;
     font-size: 57px;
     line-height: 69px;
     text-align: center;
     text-transform: uppercase;    
-    color: #2E2E2E;  
+    color: var(--text_color); 
     margin-bottom: 8px;
 }
 .modal_thanks-subtitle {
@@ -1371,7 +1390,7 @@ footer .menu .item:hover > a {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #0A7391;  
+    color: var(--text_color3);
     margin-bottom: 38px;
 }
 .modal_thanks-text {
@@ -1379,5 +1398,5 @@ footer .menu .item:hover > a {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: #2E2E2E;
+    color: var(--text_color);
 }
