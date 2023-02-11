@@ -18,7 +18,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
 
 	<!-- Данное значение часто используют(использовали) поисковые системы -->
@@ -354,7 +354,7 @@
 
 			<section class="gallery block">
 				<div class="cont">
-					<div class="gallery_title title">фотогалерея</div>
+					<div class="gallery_title title"><span>фотогалерея</span></div>
 					<div class="gallery-slider">
 						<div class="gallery-slide">
 							<div class="gallery-grid-desc">
@@ -465,7 +465,7 @@
 
 			<section class="contacts block">
 				<div class="cont">
-					<div class="contacts_title title">контакты</div>
+					<div class="contacts_title title"><span>контакты</span></div>
 					<div class="contacts_adress">г. Санкт-Петербург, ул. Кантемировская, д.3, корпус 1, литер «Б», пом. 1-Н, оф. 2.2.</div>
 					<a href="mailto:dimax-geo.ru" class="contacts_email">dimax-geo.ru</a>
 					<div class="contacts_wrap">
@@ -571,6 +571,38 @@
 
 
 
+	<div class="modal" id="modal_callback2">
+		<div class="modal_title">Заказать звонок</div>
+		<form>
+			<div class="line">
+				<div class="field">
+					<input type="text" placeholder="Ваше имя">
+				</div>
+			</div>
+			<div class="line">
+				<div class="field">
+					<input type="tel" placeholder="+7 (   ) ___ __ __">
+				</div>
+			</div>
+			<div class="form_text">Нажимая на эту кнопку, вы соглашаетесь c	политикой конфиденциальности</div>
+			<button type="submit" class="btn modal_link" data-content="#modal3">
+				<span>Заказать звонок</span>
+			</button>
+		</form>
+	</div>
+
+
+	<div class="modal modal_thanks" id="modal3">
+		<div class="modal_thanks-icon">
+			<img src="images/sent.svg" alt="">
+		</div>
+		<div class="modal_thanks-title">Спасибо!</div>
+		<div class="modal_thanks-subtitle">Ваша заявка отправлена!</div>
+		<div class="modal_thanks-text">Мы свяжемся с вами в<br> ближайшие два часа!</div>
+	</div>
+
+
+
 	
 	<!-- Подключение javascript файлов -->
 	<script src="js/jquery-3.5.0.min.js"></script>
@@ -595,7 +627,7 @@
 					let myPlacemark = new ymaps.Placemark([59.979817,30.325974], {}, {
 						iconLayout : 'default#image',
 						iconImageHref : 'images/marker.png',
-						iconImageSize : [43, 50],
+						iconImageSize : [36, 46],
 						/*iconImageOffset : [-116, -172]*/
 					})
 	
