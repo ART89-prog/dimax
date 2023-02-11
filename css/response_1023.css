@@ -4,16 +4,8 @@
         --font_size: 20px;
         --font_size_title: 26px;
     }
-
-    .licenses_desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .licenses_desc a {
-        margin-top: 22px;
+    .cont {
+        padding: 0 40px;
     }
     .header_top-left {
         display: none;
@@ -31,6 +23,7 @@
         margin-left: 0;
         font-size: 26px;
         line-height: 32px;
+        font-family: var(--font_family2);
     }
     .header_top-phone + .header_top-phone {
         margin-left: 28px;
@@ -47,6 +40,9 @@
     .main_slider-title {
         font-size: 52px;
         margin-bottom: 99px;
+    }
+    .slider .slick-arrow {
+        transform: translateY(-20px);
     }
     .title {
         margin-bottom: 40px;
@@ -70,11 +66,15 @@
     .about_info {
         width: 100%;
     }
+    .about_info-text {
+        margin-top: -40px;
+        margin-bottom: 35px;
+    }
     .about_info-subtitle {
         text-align: center;
     }
     .service_title {
-        margin-bottom: 21px;
+        margin-bottom: 18px;
     }
     .service_desc {
         line-height: 24px;
@@ -82,7 +82,8 @@
         margin: 0 auto 40px;
     }
     .tabs {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .tabs button {
         font-size: 13px;
@@ -91,8 +92,8 @@
         font-size: 18px;
         line-height: 21px;
     }
-    .tabs button:last-child {
-        margin-bottom: 0;
+    .tabs button + button {
+        margin-right: 21px;
     }
     .service_items {
         margin-bottom: -25px;
@@ -100,6 +101,7 @@
     .service_items > * {
         width: calc(100%/2 - 20px);
         margin-bottom: 25px;
+        padding: 39px 30px 16px 20px;
     }
     .contacts_adress {
         font-weight: 300;
@@ -128,6 +130,7 @@
     }
     .socials_text {
         text-align: center;
+        font-size: 18px;
     }
     .socials_links {
         flex-direction: row;
@@ -147,6 +150,7 @@
         right: 50%;
         bottom: -30%;
         transform: translateX(50%);
+        z-index: -1;
     }
     .contacts_info {
         margin-bottom: 148px;
@@ -163,12 +167,10 @@
         padding-bottom: 38px;
     }
     footer .menu {
-        margin-right: 0px;
-        margin-left: 0px;
         width: 100%;
         order: -1;
         justify-content: space-between;
-        margin-bottom: 21px;
+        margin-bottom: 16px;
     }
     footer .cont {
         flex-wrap: wrap;
@@ -179,6 +181,31 @@
     }
     .footer_politic {
         margin-right: auto;
+    }
+    .licenses_desc {
+        max-width: 528px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .licenses_desc a {
+        font-size: 18px;
+        margin-top: 18px;
+    }
+    .licenses_slider .slick-slide.slick-active {
+        margin: 0 50px;
+    }
+    .contacts_title {
+        margin-bottom: 26px;
+    }
+    .contacts_items > * {
+        padding: 25px 34px 31px;
+    }
+    .socials_text {
+        margin-bottom: 30px;
     }
 
 
