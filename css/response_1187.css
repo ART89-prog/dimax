@@ -40,7 +40,7 @@
         position: absolute;
         top: 40px;
         left: 50%;
-        transform: translateX(-20px);
+        transform: translateX(-50%);
     }
     header .menu .item {
         width: 100%;
@@ -124,12 +124,7 @@
         margin-right: 17px;
     }
 
-    .gallery .slick-slider .slick-list {
-        margin-left: -230px;
-    }
-    .gallery .cont {
-        padding: 0;
-    }
+
 
 
 

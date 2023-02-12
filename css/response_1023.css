@@ -210,6 +210,9 @@
     .modal {
         padding: 89px 60px;
     }
+    .gallery-grid-mob .gallery-row {
+        width: 550px;
+    }
 
 
 

@@ -17,7 +17,8 @@ $(() => {
     centerMode: true,
     variableWidth: true,
     arrows: true,
-    slidesToShow: 3,
+    centerPadding: '120px',
+    slidesToShow: 1,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>',
     responsive: [
@@ -27,7 +28,7 @@ $(() => {
           arrows: true,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
       {
@@ -54,9 +55,8 @@ $(() => {
     touchThreshold: 100,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>',
-    draggable: true,
-    
-}); 
+    draggable: true,      
+  }); 
 
 
 
