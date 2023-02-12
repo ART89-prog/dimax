@@ -210,6 +210,9 @@
     .modal {
         padding: 89px 60px;
     }
+    .gallery-grid-desc .gallery-row {
+        max-width: 1388px;
+    }
 
 
     

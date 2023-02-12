@@ -318,7 +318,19 @@ header .close_btn {
     width: 28px;
     height: 28px;
     z-index: 120;
-
+    transition: all .4s;
+}
+header .close_btn .icon {
+    display: block;
+    width: 27px;
+    height: 27px;
+    fill: #c1c1c1;
+}
+header .close_btn:hover .icon {
+    display: block;
+    width: 27px;
+    height: 27px;
+    fill: #0A7391;
 }
 
 .header_bottom .cont {
@@ -533,7 +545,7 @@ header .btn img {
     text-transform: uppercase;
     color: #FFFFFF;
     background: linear-gradient(269.73deg, #FA9632 7.07%, #FAB632 96.62%);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0px 9px 22px rgba(250, 150, 50, 0.3), 0px 3px 0px rgba(232, 122, 12, 0.8), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
     border-radius: 2px;
     width: 302px;
@@ -543,7 +555,11 @@ header .btn img {
     text-align: left;
     margin: 0 auto;
 }
-
+.main_slider-btn:hover {
+    background: linear-gradient(93.18deg, #0A7391 0%, #0A6091 87.59%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 9px 22px rgba(6, 96, 154, 0.3), 0px 3px 0px rgba(6, 103, 162, 0.8), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
+}
 .main_slider-btn:after {
     position: absolute;
     width: 72px;
@@ -573,7 +589,7 @@ header .btn img {
     height: 100%;
     background: linear-gradient(187.63deg, rgba(250, 150, 50, 0.7) 6.02%, rgba(6, 96, 154, 0.7) 94.2%);
 }
-.slider .slick-arrow{
+.slick-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50px);
@@ -582,18 +598,63 @@ header .btn img {
     width: 40px; 
     height: 40px; 
 }
-.slider .slick-arrow.prev {
-    left: calc(50% - 602px);
-    background: url('../images/prev.svg') 0 0 / 100% no-repeat; 
+.slick-arrow.prev {
+    top: 50%;  
     border-radius: 2px;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(269.73deg, #FA9632 7.07%, #FAB632 96.62%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 9px 22px rgba(250, 150, 50, 0.3), 0px 3px 0px rgba(232, 122, 12, 0.8), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
 }
-
-.slider .slick-arrow.next{
-    right: calc(50% - 602px);
-    background: url('../images/next.svg') 0 0 / 100% no-repeat;
+.slider .slick-arrow.prev {
+    left: calc(50% - 602px);  
+}
+.slick-arrow.next {
+    top: 50%;  
     border-radius: 2px;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(269.73deg, #FA9632 7.07%, #FAB632 96.62%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 9px 22px rgba(250, 150, 50, 0.3), 0px 3px 0px rgba(232, 122, 12, 0.8), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
+    border-radius: 2px;
+}
+.slider .slick-arrow.next {
+    right: calc(50% - 602px);   
+}
+.slick-arrow.prev:before {
+    position: absolute;
+    content: "";
+    background: url('../images/prev.svg') 0 0 / 100% no-repeat; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 10px;
+}
+.slick-arrow.next:before {
+    position: absolute;
+    content: "";
+    background: url('../images/next.svg') 0 0 / 100% no-repeat; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 10px;
+}
+.slick-arrow.prev:hover {
+    background: linear-gradient(93.18deg, #0A7391 0%, #0A6091 87.59%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 9px 22px rgba(6, 96, 154, 0.3), 0px 3px 0px rgba(6, 103, 162, 0.8), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
+}
+.slick-arrow.next:hover {
+    background: linear-gradient(93.18deg, #0A7391 0%, #0A6091 87.59%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 9px 22px rgba(6, 96, 154, 0.3), 0px 3px 0px rgba(6, 103, 162, 0.8), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
 }
 
 
@@ -895,7 +956,7 @@ header .btn img {
 }
 .licenses_slider .slick-arrow {
     position: absolute;
-    top: 35%;
+    top: 50%;
     z-index: 2;
     font-size: 0; 
     width: 40px; 
@@ -903,13 +964,11 @@ header .btn img {
 }
 .licenses_slider .slick-arrow.prev {
     left: calc(50% - 340px);
-    background: url('../images/prev.svg') 0 0 / 100% no-repeat; 
     border-radius: 2px;
     cursor: pointer;
 }
 .licenses_slider .slick-arrow.next{
     right: calc(50% - 340px);
-    background: url('../images/next.svg') 0 0 / 100% no-repeat;
     border-radius: 2px;
     cursor: pointer;
 }
@@ -1075,16 +1134,9 @@ header .btn img {
 }
 .gallery-slider .slick-arrow.prev {
     left: calc(50% - 602px);
-    background: url('../images/prev.svg') 0 0 / 100% no-repeat; 
-    border-radius: 2px;
-    cursor: pointer;
 }
-
 .gallery-slider .slick-arrow.next{
     right: calc(50% - 602px);
-    background: url('../images/next.svg') 0 0 / 100% no-repeat;
-    border-radius: 2px;
-    cursor: pointer;
 }
 
 
@@ -1404,4 +1456,18 @@ footer .menu .item:hover > a {
     line-height: 26px;
     text-align: center;
     color: var(--text_color);
+}
+
+
+.fancybox__content>.carousel__button.is-close {
+    background: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    transition: all .4s;
+}
+.fancybox__content>.carousel__button.is-close:hover {
+    background: url(../images/close-hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }

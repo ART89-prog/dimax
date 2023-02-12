@@ -263,6 +263,13 @@
         font-size: 18px;
         line-height: 21px;
     }
+    header .menu .item > a {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    header .menu {
+        padding: 170px 20px 50px;
+    }
 
 
 
