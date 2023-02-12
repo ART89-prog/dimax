@@ -18,7 +18,7 @@ $(() => {
     variableWidth: true,
     arrows: true,
     centerPadding: '120px',
-    slidesToShow: 1,
+    slidesToShow: 3,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>',
     responsive: [

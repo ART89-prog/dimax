@@ -120,8 +120,8 @@
     .socials_text {
         margin-bottom: 15px;
     }
-    footer .menu .item > a {
-        margin-right: 17px;
+    footer .menu {
+        max-width: 520px;
     }
 
 
