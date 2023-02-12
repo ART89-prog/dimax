@@ -70,6 +70,7 @@
         margin-bottom: 37px;
         margin-left: 22px;
         margin-right: 22px;
+        line-height: 1.2;
     }
     .about_info-text {
         margin-top: -10px;
@@ -129,6 +130,13 @@
     .licenses_slider .slick-arrow {
         top: 50%;
     }
+    .licenses_desc {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .licenses_desc a {
+        margin-top: 12px;
+    }
     .contacts_adress {
         font-size: 14px;
         line-height: 17px;
@@ -166,12 +174,12 @@
     }
     footer .menu {
         flex-direction: column;   
-        padding: 13px 0;   
+        padding: 13px 30px;   
         background: #1B1B1B;  
         margin-right: -30px;
         margin-left: -30px;
-        padding-right: 30px;
-        padding-left: 30px;
+        width: calc(100% + 60px);
+        margin-bottom: 0;
     }
     footer .menu .item > a {
         margin-right: 0px;
@@ -187,7 +195,74 @@
     footer .cont {
         padding: 0;
     }
-
+    .footer_copy {
+        display: none;
+    }
+    .footer_politic {
+        display: none;
+    }
+    .footer_bottom {
+        display: block;
+        background: #000;
+        padding: 21px 0;
+    }
+    .footer_bottom .cont {
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_copy-mob {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .footer_politic-mob {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FA9632;
+    }
+    .modal {
+        padding: 121px 24px 62px;
+    }
+    .modal.modal_thanks {
+        padding: 140px 37px 71px;
+    }
+    .fancybox__content>.carousel__button.is-close {
+        right: 50%;
+        transform: translateX(20px);
+        top: 63px;
+    }
+    .form_text {
+        font-size: 13px;
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }    
+    .modal_title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+    .modal_thanks-title {
+        font-size: 42px;
+        line-height: 51px;
+    }
+    .modal_thanks-subtitle {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 48px;
+    }
+    .modal_thanks-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
 
 
 

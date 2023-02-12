@@ -1289,6 +1289,9 @@ footer .menu .item:hover > a {
     text-align: right;
     color: var(--text_color2);
 }
+.footer_bottom {
+    display: none;
+}
 
 
 
@@ -1371,7 +1374,7 @@ footer .menu .item:hover > a {
 }
 
 
-.modal_thanks {
+.modal.modal_thanks {
     padding: 99px 74px;
 }
 .modal_thanks-icon {
