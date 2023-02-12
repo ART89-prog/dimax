@@ -27,8 +27,8 @@ $(() => {
         settings: {
           arrows: true,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          centerPadding: '120px',
+          slidesToShow: 3
         }
       },
       {
@@ -37,7 +37,7 @@ $(() => {
           arrows: true,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 3
         }
       }
     ]

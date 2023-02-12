@@ -118,9 +118,6 @@
         margin-left: 10px;
         margin-bottom: 10px;
     }
-    .licenses_slider .slick-slide.slick-active {
-        width: 176px;
-    }
     .licenses_slider .slick-arrow.prev {
         left: 0px;
     }
@@ -280,11 +277,11 @@
         transform: translateX(-50%);
         background: url(../images/map_bg2.png);
     }
-    .licenses .slick-track {
-        padding: 80px 0 0;
-    }
-    .licenses {
-        padding-bottom: 0;
+    .licenses .slick-slide {
+        margin: 0 30px;
+    } 
+    .licenses .slick-list {
+        margin: 0 -30px;
     }
 
     .gallery-grid-desc .item-1 {

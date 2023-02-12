@@ -100,9 +100,6 @@
     .about_info {
         width: calc(100% - 440px);
     }
-    .licenses_slider .slick-slide.slick-active {
-        margin: 0 90px;
-    }
     .contacts .map_wrap {
         width: 400px;
         height: 350px;
