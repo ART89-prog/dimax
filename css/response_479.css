@@ -66,6 +66,18 @@
     .contacts_email {
         margin-bottom: 30px;
     }
+    .gallery .slick-slider .slick-list {
+        margin-left: -230px;
+    }
+    .gallery-slider .slick-arrow.prev {
+        left: 30px;
+    }
+    .gallery-slider .slick-arrow.next {
+        right: 30px;
+    }
+    .licenses {
+        padding-bottom: 80px;
+    }
 
 
  

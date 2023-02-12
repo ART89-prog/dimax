@@ -124,9 +124,12 @@
         margin-right: 17px;
     }
 
-    /* .slick-slider .slick-list {
-        margin-left: -150px;
-    } */
+    .gallery .slick-slider .slick-list {
+        margin-left: -230px;
+    }
+    .gallery .cont {
+        padding: 0;
+    }
 
 
 
